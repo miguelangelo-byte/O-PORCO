@@ -43,7 +43,7 @@ def principio():
             db.execute(ver)
             x = db.fetchone()
             bananildo = f"Ola {x[0]} e {x[1]}"
-    return render_template("slakk.html", texto=bananildo)
+    return render_template("logteste.html", texto=bananildo)
 
 @app.route("/verificarteste", methods=["GET", "POST"])
 def adm():
@@ -51,7 +51,7 @@ def adm():
         db.execute("truncate table Usuario")
     db.execute(ver_adm)
     xadm = db.fetchall()
-    return render_template("adm.html", usuarios=xadm)
+    return render_template("DBTeste.html", usuarios=xadm)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
