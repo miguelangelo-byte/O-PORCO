@@ -9,6 +9,13 @@
 <body>
     <div class="Diva"></div>
     <div class="topbranco"></div>
-    <img class="porco" src="{{ url_for('static', filename='FOGO.png') }}" alt="oink">
+    <navbar class="nav">
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+    </navbar>
+    <imagens>
+        <img class="porcotxt" src="{{ url_for('static', filename='oporco.png') }}" alt="">
+        <img class="porco" src="{{ url_for('static', filename='FOGO.png') }}" alt="oink">
+        <img class="logo" src="{{ url_for('static', filename='LogoP.png') }}" alt="bananoviskkkk">
+    </imagens>
 </body>
 </html>

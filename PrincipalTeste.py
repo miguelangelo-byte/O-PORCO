@@ -27,6 +27,10 @@ app = flk(__name__)
 def principal():
     return render_template("Home.html")
 
+@app.route("/sobre")
+def sobre():
+    return "teste"
+
 @app.route("/inicioteste", methods=["GET", "POST"])
 def principio():
     bananildo = ""
