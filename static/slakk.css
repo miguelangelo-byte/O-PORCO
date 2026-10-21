@@ -1,0 +1,27 @@
+.porco {
+    position: fixed;
+    text-align: center;
+    left: 40%;
+    top: 12%;
+    width: 275px;
+}
+.quadrado {
+    position: fixed;
+    top: 2%;
+    right: 39.6%;
+    width: 290px;
+    height: 270px;
+    border: 1px solid black;
+}
+#img1 {
+    position: fixed;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 100px;
+}
+#item {
+    position: fixed;
+    left: 50%;
+    top: 42%;
+    transform: translateX(-50%);
+}

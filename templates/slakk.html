@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slakk.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="quadrado"></div>
+    <img src="{{ url_for('static', filename='oporco.png') }}" alt="oporco" id="img1">
+    <form method="POST" action="/inicio" class="porco">
+        <h2>usuario</h2>
+        <input type="text" name="UsuarioLogin">
+        <h2>senha</h2>
+        <input type="text"  name="UsuarioSenha">
+        <button type="submit" >Manda</button>
+    </form>
+    {% if texto %}
+        <h1 id="item">{{texto}}</h1>
+    {% endif %}
+</body>
+</html>
