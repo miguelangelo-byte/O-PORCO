@@ -25,7 +25,7 @@ app = flk(__name__)
 
 @app.route("/home")
 def principal():
-    pass
+    return render_template("Home.html")
 
 @app.route("/inicioteste", methods=["GET", "POST"])
 def principio():

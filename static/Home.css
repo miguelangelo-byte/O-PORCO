@@ -1,0 +1,14 @@
+.topbranco {
+    position: fixed;
+    top: 50%;
+    right: 39.6%;
+    width: 290px;
+    height: 270px;
+    border: 1px solid white;
+}
+.porco {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+
+}
