@@ -1,7 +1,7 @@
 from flask import Flask as flk
 from flask import render_template, request
 import mysql.connector as sql
-from sqlkk import *
+from SQLcodes import *
 import os
 senhas=os.getenv("DB_PASSWORD", "")
 
