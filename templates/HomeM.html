@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Home.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Diva"></div>
+    <div class="topbranco"></div>
+    <navbar class="nav">
+        <a href="{{ url_for('sobre') }}">Sobre</a>
+    </navbar>
+    <imagens>
+        <img class="porcotxt" src="{{ url_for('static', filename='oporco.png') }}" alt="">
+        <img class="porco" src="{{ url_for('static', filename='FOGO.png') }}" alt="oink">
+        <img class="logo" src="{{ url_for('static', filename='LogoP.png') }}" alt="bananoviskkkk">
+    </imagens>
+    <form method="POST" action="/homeMALIGNA">
+        <button class="eisqueletoo">aperte</button>
+    </form>
+    {% if teste == "sim" %}
+        <img class="eisqueleto" src="{{ url_for('static', filename='esqueleto.gif') }}">
+    {% endif %}
+</body>
+</html>

@@ -2,6 +2,9 @@
     font-family: "alte haas";
     src: url("Fontes/AlteHaasGroteskRegular");
 }
+body {
+    overflow-x: hidden;
+}
 
 .topbranco {
     position: absolute;
@@ -44,4 +47,37 @@
     z-index: 1000;
     text-decoration: none;
     font-family: "alte haas";
+}
+
+
+/* after this message it's just a joke, pls ignore, all commit's don't have this only the commit 4 :P */
+
+.eisqueletoo {
+    position: absolute;
+    top: 75%;
+    right: 75%;
+    z-index: 1000;
+}
+#Es {
+    position: absolute;
+    top: 76%;
+    right: 75%;
+    z-index: 1000;
+}
+.eisqueleto {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateX(100%);
+    animation: viuisso 2.3s linear;
+    z-index: 1000;
+}
+@keyframes viuisso {
+    from {
+        right: 0;
+    }
+    to {
+        right:100%;
+        transform: translateX(-100%);
+    }
 }
