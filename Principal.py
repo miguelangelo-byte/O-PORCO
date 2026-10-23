@@ -31,6 +31,10 @@ def principal():
 def sobre():
     return render_template("Sobre.html")
 
+@app.route("/cardapio")
+def cardapio():
+    return render_template("Cardapio.html")
+
 #para verificações passadas, não usado mais
 @app.route("/inicioteste", methods=["GET", "POST"])
 def principio():
