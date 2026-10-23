@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "alte haas";
+    src: url("Fontes/AlteHaasGroteskRegular");
+}
+body {
+    overflow-x: hidden;
+}
+.topbranco {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    width: 98%;
+    height: 80px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 35px;
+    z-index: 2;
+}
+.porco {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+.logo {
+    position: absolute;
+    left: 85%;
+    top: 5%;
+    width: 150px;
+    height: 40px;
+    z-index: 3;
+}
+.HBackground {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    width: 650px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    z-index: 4;
+}
+.textocaixa {
+    position: absolute;
+    left: 3%;
+    top: -2%;
+    width: 610px;
+    height: 500px;
+    z-index: 5;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.porcotxt {
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+    top: 100%;
+    width: 150px;
+    height: 100px;
+    z-index: 1000;
+}
+.nav {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 32px;
+    z-index: 1000;
+    text-decoration: none;
+    font-family: "alte haas";
+}
+.historia {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-size: 20px;
+    z-index: 1000;
+    text-align: center;
+}

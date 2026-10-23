@@ -29,8 +29,9 @@ def principal():
 
 @app.route("/sobre")
 def sobre():
-    return "teste"
+    return render_template("Sobre.html")
 
+#para verificações passadas, não usado mais
 @app.route("/inicioteste", methods=["GET", "POST"])
 def principio():
     bananildo = ""
