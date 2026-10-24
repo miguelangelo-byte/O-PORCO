@@ -52,7 +52,7 @@ def principio():
             db.execute(ver)
             x = db.fetchone()
             bananildo = f"Ola {x[0]} e {x[1]}"
-    return render_template("logteste.html", texto=bananildo)
+    return render_template("logTeste.html", texto=bananildo)
 
 @app.route("/verificarteste", methods=["GET", "POST"])
 def adm():

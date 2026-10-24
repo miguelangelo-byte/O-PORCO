@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Sobre.css') }}">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/sobre.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="Diva"></div>
     <div class="topbranco"></div>
-    <div class="HBackground"></div>
     <navbar class="nav">
-        <a href="{{ url_for('sobre') }}">Sobre</a>
-        <a href="{{ url_for('Cardapio') }}">Cardapio</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/cardapio">Cardapio</a>
     </navbar>
     <imagens>
-        <img class="porcotxt" src="{{ url_for('static', filename='imagens/oporco.png') }}" alt="">
-        <img class="porco" src="{{ url_for('static', filename='imagens/FOGO.png') }}" alt="oink">
-        <img class="logo" src="{{ url_for('static', filename='imagens/LogoP.png') }}" alt="bananoviskkkk">
+        <img class="porcotxt" src="static/imagens/oporco.png">
+        <img class="fundo" src="static/imagens/FOGO.png">
+        <img class="logo" src="static/imagens/LogoP.png">
     </imagens>
     <div class="HBackground">
         <div class="textocaixa">

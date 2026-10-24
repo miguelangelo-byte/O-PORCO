@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "alte haas";
+    src: url("../Fontes/AlteHaasGroteskRegular.ttf");
+}
+body {
+    overflow-x: hidden;
+}
+.topbranco {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    width: 98%;
+    height: 80px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 35px;
+    z-index: 2;
+}
+.fundo {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+.logo {
+    position: absolute;
+    left: 85%;
+    top: 5%;
+    width: 150px;
+    height: 40px;
+    z-index: 3;
+}
+.nav {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 32px;
+    z-index: 1000;
+    text-decoration: none;
+    font-family: "alte haas";
+}
