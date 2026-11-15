@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "alte haas";
+    src: url("Fontes/AlteHaasGroteskRegular");
+}
+.HBackground {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    width: 650px;
+    height: 600px;
+    background: white;
+    border-radius: 20px;
+    z-index: 4;
+}
+.textocaixa {
+    position: absolute;
+    left: 3%;
+    top: -2%;
+    width: 610px;
+    height: 500px;
+    z-index: 5;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.historia {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-size: 20px;
+    z-index: 1000;
+    text-align: center;
+}

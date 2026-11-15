@@ -1,0 +1,7 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+testeteste.py
+historia.txt
+senha.py

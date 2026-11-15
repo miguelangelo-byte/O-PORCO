@@ -1,0 +1,11 @@
+body {
+    overflow-y: hidden;
+}
+.porcotxt {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    width: 30%;
+    height: 40%;
+    z-index: 4;
+}
