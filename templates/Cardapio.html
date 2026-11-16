@@ -20,8 +20,13 @@
     </imagens>
     <div class="HBackground"></div>
     <form action="/cardapio" method="POST">
-        <div class="check {% if verificar == '1' %}verde{% endif %}"></div>
-        <button type="submit" class="butao" name="butao1" value="1">Click</button>
+        <button type="submit" class="butao" name="butao1">Carrinho</button>
+        <button type="submit" class="butao" id="b2" name="apagar">Carrinho</button>
+        <h1 class="carrinho2">{{carrinho2}}</h1>
+    </form>
+    <form action="/cardapio" method="POST">
+        <div class="checkTST {{verificar}}"></div>
+        <button type="submit" class="butaoTST" name="butaoTST">Click</button>
     </form>
 </body>
 </html>

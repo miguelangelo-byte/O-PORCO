@@ -1,5 +1,5 @@
 from flask import Flask as flk
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect, session
 import mysql.connector as sql
 from SQLcodes import *
 try:
@@ -24,6 +24,7 @@ db = ODB.cursor()
 db.execute(tabelausu)
 
 app = flk(__name__)
+app.secret_key = secret
 
 @app.route("/")
 def direcionar():
@@ -39,10 +40,17 @@ def sobre():
 
 @app.route("/cardapio", methods=["GET", "POST"])
 def cardapio():
-    verificar = "0"
+    verificar = ""
+    if "carrinho2" not in session:
+        session["carrinho2"] = 0
     if request.method == "POST":
-        verificar = request.form.get("butao1")
-    return render_template("Cardapio.html", verificar=verificar)
+        if "butao1" in request.form:
+            session["carrinho2"] += 1
+        if "apagar" in request.form:
+            session["carrinho2"] = 0
+        if "butaoTST" in request.form:
+            verificar = "verde"
+    return render_template("Cardapio.html", verificar=verificar, carrinho2=session["carrinho2"])
 
 #para verificações passadas, não usado mais
 @app.route("/inicioteste", methods=["GET", "POST"])
